@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tx2-5G-Ziw" customClass="ShareViewContent" customModule="share_to_instagram_like_spotify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="541"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whale" translatesAutoresizingMaskIntoConstraints="NO" id="IMd-yT-MaE">
+                    <rect key="frame" x="24" y="24" width="366" height="366"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IMd-yT-MaE" secondAttribute="height" multiplier="1:1" id="Nji-QV-hKU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQO-ZR-bqL">
+                    <rect key="frame" x="142.5" y="418" width="129" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pml-Vu-Tp6">
+                    <rect key="frame" x="156" y="455" width="102" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="4hB-7N-Y1G" firstAttribute="trailing" secondItem="IMd-yT-MaE" secondAttribute="trailing" constant="24" id="5Dm-gn-NxJ"/>
+                <constraint firstItem="IMd-yT-MaE" firstAttribute="leading" secondItem="4hB-7N-Y1G" secondAttribute="leading" constant="24" id="DCx-5K-aNE"/>
+                <constraint firstItem="rQO-ZR-bqL" firstAttribute="top" secondItem="IMd-yT-MaE" secondAttribute="bottom" constant="28" id="EAj-6o-v8u"/>
+                <constraint firstItem="pml-Vu-Tp6" firstAttribute="centerX" secondItem="rQO-ZR-bqL" secondAttribute="centerX" id="Rxe-5E-u6v"/>
+                <constraint firstItem="pml-Vu-Tp6" firstAttribute="top" secondItem="rQO-ZR-bqL" secondAttribute="bottom" constant="8" id="XaQ-pd-67W"/>
+                <constraint firstItem="rQO-ZR-bqL" firstAttribute="centerX" secondItem="IMd-yT-MaE" secondAttribute="centerX" id="jHF-YU-1Qv"/>
+                <constraint firstItem="IMd-yT-MaE" firstAttribute="top" secondItem="tx2-5G-Ziw" secondAttribute="top" constant="24" id="qBp-5G-CTf"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="4hB-7N-Y1G"/>
+            <point key="canvasLocation" x="556.52173913043487" y="-19.754464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="whale" width="275" height="183"/>
+    </resources>
+</document>
